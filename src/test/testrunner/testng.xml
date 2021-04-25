@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TCGPlayer Suite">
+    <listeners>
+        <listener class-name="com.tcgplayer.testlisteners.ExtentReportListener"></listener>
+
+    </listeners>
+    <test name="SearchPage Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.tcgplayer.tests.SearchPageTest"/>
+        </classes>
+    </test>
+
+    <!-- Suite -->
+<!--    <test name="SearchPage Test">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--    <classes>-->
+<!--        <class name="com.tcgplayer.tests.SearchPageTest"/>-->
+<!--    </classes>-->
+<!--    </test>-->
+
+    <!-- Test -->
+</suite>
