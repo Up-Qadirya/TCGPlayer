@@ -62,9 +62,9 @@ public class ElementUtil {
         WebDriverWait wait = new WebDriverWait(driver, timeOut);
         wait.until(ExpectedConditions.visibilityOf(element));
     }
-    public void clickWithJS(By element) {
+    public void clickWithJS(By locator) {
         JavascriptExecutor js=(JavascriptExecutor)driver;
-        js.executeScript("argument[0].click()",element);
+        js.executeScript("argument[0].click()",locator);
     }
 
 
